@@ -10,6 +10,11 @@
        url("/fonts/Open+Sans.woff") format("woff");
 }
 
+::before
+::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Open Sans", "Arial", sans-serif;
 
@@ -17,6 +22,8 @@ body {
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
+
+    color: var(--black);
 }
 
 h1 {
@@ -73,4 +80,29 @@ button {
     font-weight: 400;
     font-size: 38px;
     line-height: 120%;
+}
+
+:root {
+    --black: #031923;
+    --yellow: #E5BB33;
+    --blue: #205B75;
+    --white: #FFFFFF;
+}
+
+footer {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.container {
+    min-width: 320px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
