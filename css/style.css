@@ -125,6 +125,8 @@ footer {
     display: inline-block;
 }
 .main-nav a {
+    padding: 10px 15px 10px 15px;
+    gap: 10px;
     color: var(--black);
     flex: none;
     text-decoration: none;
@@ -210,12 +212,15 @@ footer {
 .social-link_gitlab {
     background-image: url("../img/gitlab.svg");
 }
+
 .social-link_instagram {
     background-image: url("../img/instagram.svg");
 }
+
 .social-link_telegram {
     background-image: url("../img/telegram.svg");
 }
+
 .social-link_vk{
     background-image: url("../img/vk.svg");
 }
@@ -254,6 +259,7 @@ footer {
     background-repeat: no-repeat;
     background-position: left;
 }
+
 .contact-link:hover {
     text-decoration: none;
     color: var(--green);
