@@ -271,25 +271,25 @@ footer {
 
 
 .skill-item_html {
-    background-image: url("/img/html.svg");
+    background-image: url("../img/html.svg");
     background-repeat: no-repeat;
 }
 
 
 .skill-item_css {
-    background-image: url("/img/css.svg");
+    background-image: url("../img/css.svg");
     background-repeat: no-repeat;
 }
 
 
 .skill-item_cpp {
-    background-image: url("/img/c++.svg");
+    background-image: url("../img/c++.svg");
     background-repeat: no-repeat;
 }
 
 
 .skill-item_python {
-    background-image: url("/img/python.svg");
+    background-image: url("../img/python.svg");
     background-repeat: no-repeat;
 }
 
