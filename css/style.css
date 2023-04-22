@@ -1,5 +1,6 @@
-::before
-::after {
+*,
+*::before
+*::after {
     box-sizing: border-box;
 }
 
@@ -15,82 +16,57 @@ body {
 }
 
 h1 {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 60px;
     line-height: 110%;
-    text-align: left;
 }
 
 h2 {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 120%;
-    text-align: left;
 }
 
 h3 {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
-    text-align: left;
 }
 
 a {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;
-    text-align: left;
+    color: var(--green);
 }
 
 button {
-    padding: 0;
     border: none;
-    color: inherit;
-    background-color: transparent;
     cursor: pointer;
     text-transform: lowercase;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 6px 10px 10px;
-    gap: 10px;
     border: 1px solid var(--green);
     border-radius: 8px;
     color: var(--green);
-    background-color: var(--white);
+    background-color: transparent;
 }
 
 button:hover {
-    color: var(--white);;
+    color: var(--white);
     background-color: var(--green);
 }
 
 p {
-    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-    letter-spacing: 0em;
-    text-align: left;
 }
 
 .subtitle {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 38px;
-    letter-spacing: 0em;
     line-height: 120%;
-    text-align: left;
     color: var(--green);
 }
 
@@ -103,12 +79,6 @@ p {
 }
 
 footer {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 150%;
-
     color: var(--white);
     background-color: var(--black);
 }
@@ -119,37 +89,25 @@ footer {
     margin: 0 auto;
     padding: 0 20px;
 }
-.main-nav li{
-    padding: 10px 15px;
-    gap: 10px;
-    display: inline-block;
-}
+
 .main-nav a {
-    padding: 10px 15px 10px 15px;
-    gap: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    padding: 10px 15px;
     color: var(--black);
-    flex: none;
+    display: inline-block;
     text-decoration: none;
 }
 
 .main-nav a:hover {
     color: var(--green);
-    flex: none;
-    text-decoration: none;
 }
 
 .social {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 20px;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
 }
 
 .social li {
@@ -159,20 +117,11 @@ footer {
 }
 
 .social-link {
-    padding: 10px;
-    gap: 10px;
-    box-sizing: border-box;
-    display: flex;
-    flex-shrink: 0;
-    flex-direction: row;
-    align-items: flex-start;
+    display: inline-block;
     width: 50px;
     height: 50px;
-    border: 1px solid #09A494;
+    border: 1px solid var(--green);
     border-radius: 50%;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -182,14 +131,7 @@ footer {
 }
 
 .skills-buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     padding: 0px;
-    gap: 20px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
 .visually-hidden {
@@ -226,36 +168,18 @@ footer {
 }
 
 .contact {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 40px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+    padding: 0;
 }
 
 .contact li {
     display: inline-block;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .contact-link {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
     text-decoration: none;
     color: var(--black);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 12px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     background-repeat: no-repeat;
     background-position: left;
 }
@@ -278,34 +202,29 @@ footer {
 
 .skill-item_html {
     background-image: url("../img/html.svg");
-    background-repeat: no-repeat;
 }
 
 
 .skill-item_css {
     background-image: url("../img/css.svg");
-    background-repeat: no-repeat;
 }
 
 
 .skill-item_cpp {
     background-image: url("../img/c++.svg");
-    background-repeat: no-repeat;
 }
 
 
 .skill-item_python {
     background-image: url("../img/python.svg");
-    background-repeat: no-repeat;
 }
 
-img {
+.main-photo {
     border-radius: 50%
 }
 
 .main-header .main-logo {
-    flex: none;
-    flex-grow: 0;
+    padding: 60px 0px 0px;
 }
 
 .skill-list {
