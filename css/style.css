@@ -311,19 +311,12 @@ nav {
     margin: 0;
     margin-bottom: 40px;
     align-items: flex-start;
+    gap: 40px;
 }
 
 .skills-title  div {
     display: flex;
     gap: 20px;
-    align-items: center;
-}
-
-.skills > div {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    margin-bottom: 40px;  
     align-items: center;
 }
 
