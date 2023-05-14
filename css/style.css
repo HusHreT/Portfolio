@@ -333,6 +333,10 @@ nav {
     margin-bottom: 120px;
 }
 
+.main-header-wrap {
+    line-height: 0;
+}
+
 .nav-btn{
     display: none;
 }
@@ -366,6 +370,7 @@ nav {
     .skill-level {
         margin-bottom: 24px;
     }
+
 }
 
 @media screen and (max-width: 768px) {}
