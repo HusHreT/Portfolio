@@ -13,6 +13,7 @@ body {
     line-height: 150%;
 
     color: var(--black);
+    background-color: var(--white);
 }
 
 h1 {
@@ -233,6 +234,16 @@ nav {
     background-image: url("../img/phone.svg");
 }
 
+.dark-theme .contact-link_phone {
+    padding: 5px 0px 5px 42px;
+    background-image: url("../dark\ theme/phone.svg");
+}
+
+.dark-theme .contact-link_mail {
+    padding: 5px 0px 5px 42px;
+    background-image: url("../dark\ theme/email.svg");
+}
+
 .contact-link_mail {
     padding: 5px 0px 5px 42px;
     background-image: url("../img/mail.svg");
@@ -342,22 +353,22 @@ nav {
 }
 
 @media screen and (max-width: 1024px) {
-    body{
+    body {
         font-size: 16px;
     }
-    h1{
+    h1 {
         font-size: 50px;
     }    
-    .subtitle{
+    .subtitle {
         font-size: 28px;
     }
-    h2{
+    h2 {
         font-size: 24px;
     }
-    button, a{
+    button, a {
         font-size: 16px;
     }
-    .intro img{
+    .intro img {
         width: 250px;
         height: 250px;
     }
@@ -375,7 +386,7 @@ nav {
 
 @media screen and (max-width: 768px) {}
 @media screen and (max-width: 720px) {
-    .intro img{
+    .intro img {
         width: 150px;
         height: 150px;
     }
@@ -501,4 +512,17 @@ nav {
     .main-header, .intro, .about, .skills, .interests, .contacts {
         margin-bottom: 50px;
     }
+}
+
+.dark-theme {
+    --black: #CCCCCC;
+    --white: #031923;
+}
+
+.dark-theme .social-link {
+    background-color: #CCCCCC;
+}
+
+.dark-theme .social-link:hover {
+    background-color: var(--yellow);
 }
