@@ -236,12 +236,12 @@ nav {
 
 .dark-theme .contact-link_phone {
     padding: 5px 0px 5px 42px;
-    background-image: url("../dark\ theme/phone.svg");
+    background-image: url("../img/dark-theme/phone.svg");
 }
 
 .dark-theme .contact-link_mail {
     padding: 5px 0px 5px 42px;
-    background-image: url("../dark\ theme/email.svg");
+    background-image: url("../img/dark-theme/email.svg");
 }
 
 .contact-link_mail {
