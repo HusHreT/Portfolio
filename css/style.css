@@ -236,12 +236,12 @@ nav {
 
 .dark-theme .contact-link_phone {
     padding: 5px 0px 5px 42px;
-    background-image: url("../img/dark-theme/phone.svg");
+    background-image: url("../dark\ theme/phone.svg");
 }
 
 .dark-theme .contact-link_mail {
     padding: 5px 0px 5px 42px;
-    background-image: url("../img/dark-theme/email.svg");
+    background-image: url("../dark\ theme/email.svg");
 }
 
 .contact-link_mail {
@@ -306,6 +306,22 @@ nav {
     align-items: flex-start;
     gap: 40px;
     flex-wrap: wrap;
+}
+
+.skill-item_html {
+    background-image: url("../img/html.svg");
+}
+
+.skill-item_css {
+    background-image: url("../img/css.svg");
+}
+
+.skill-item_python {
+    background-image: url("../img/python.svg");
+}
+
+.skill-item_cpp {
+    background-image: url("../img/cpp.svg");
 }
 
 .skills-title  div {
