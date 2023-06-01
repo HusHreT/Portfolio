@@ -11,7 +11,7 @@ const skills = {
         const skillItem = document.createElement('dt');
         const skillLevel = document.createElement('dd');
         const skillPercent = document.createElement('div');
-        const iconPath = `img/${skill.icon}`;
+        const iconPath = `/img/${skill.icon}`;
 
         skillItem.style.backgroundImage = `url(${iconPath})`;
 
@@ -25,8 +25,8 @@ const skills = {
         skillPercent.style.width = `${skill.level}%`;
         skillLevel.appendChild(skillPercent);
 
-        skillList.appendChild(skillItem);
-        skillList.appendChild(skillLevel);
+        parentElement.appendChild(skillItem);
+        parentElement.appendChild(skillLevel);
     });
 }
 };
