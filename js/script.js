@@ -1,9 +1,9 @@
 const skills = {
     data: [
-    { name: 'html', level: 30, class: 'skill-item skill-item_html', icon: 'html.svg'},
-    { name: 'css', level: 40, class: 'skill-item skill-item_css', icon: 'css.svg'},
-    { name: 'python', level: 10, class: 'skill-item skill-item_python',  icon: 'python.svg'},
-    { name: 'cpp', level: 70, class: 'skill-item skill-item_cpp', icon: 'cpp.svg'},
+    { name: 'html', level: 30, icon: 'html.svg'},
+    { name: 'css', level: 40, icon: 'css.svg'},
+    { name: 'python', level: 10,  icon: 'python.svg'},
+    { name: 'cpp', level: 70, icon: 'cpp.svg'},
     ],
 
     generateList: function(parentElement) {
@@ -17,12 +17,11 @@ const skills = {
 
         skillItem.classList.add('skill-item');
         skillLevel.classList.add('skill-level');
-        skillPercent.classList.add(skill.cssClass);
 
         skillItem.textContent = skill.name;
-        skillLevel.textContent = `${skill.level}%`;
 
         skillPercent.style.width = `${skill.level}%`;
+        skillPercent.textContent = `${skill.level}%`;
         skillLevel.appendChild(skillPercent);
 
         parentElement.appendChild(skillItem);

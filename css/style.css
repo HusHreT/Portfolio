@@ -308,22 +308,6 @@ nav {
     flex-wrap: wrap;
 }
 
-.skill-item_html {
-    background-image: url("../img/html.svg");
-}
-
-.skill-item_css {
-    background-image: url("../img/css.svg");
-}
-
-.skill-item_python {
-    background-image: url("../img/python.svg");
-}
-
-.skill-item_cpp {
-    background-image: url("../img/cpp.svg");
-}
-
 .skills-title  div {
     display: flex;
     gap: 20px;
