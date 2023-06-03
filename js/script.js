@@ -12,7 +12,6 @@ const skills = {
         const skillLevel = document.createElement('dd');
         const skillPercent = document.createElement('div');
         const iconPath = `img/${skill.icon}`;
-
         skillItem.style.backgroundImage = `url(${iconPath})`;
 
         skillItem.classList.add('skill-item');

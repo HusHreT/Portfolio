@@ -12,8 +12,8 @@ body {
     font-size: 20px;
     line-height: 150%;
 
-    color: var(--black);
-    background-color: var(--white);
+    color: var(--white);
+    background-color: var(--black);
 }
 
 h1 {
@@ -495,8 +495,8 @@ nav {
 }
 
 .dark-theme {
-    --black: #CCCCCC;
-    --white: #031923;
+    --black: #031923;
+    --white: #CCCCCC;
 }
 
 .dark-theme .social-link {
@@ -504,5 +504,31 @@ nav {
 }
 
 .dark-theme .social-link:hover {
-    background-color: var(--yellow);
+    background-color: var(--green);
+}
+
+.dark-theme .contact-link:hover {
+    color: var(--green);
+}
+
+.dark-theme .contact-link {
+    color: var(--white);
+}
+
+.dark-theme .main-nav a {
+    color: var(--white);
+}
+
+.dark-theme .skill-level {
+    border: 1px solid var(--white);
+}
+
+.dark-theme .main-nav a:hover {
+    color: var(--green);
+}
+
+.dark-theme .main-footer {
+    border: 1px solid #09A494;
+    color: var(--green);
+    background-color: var(--black);
 }
