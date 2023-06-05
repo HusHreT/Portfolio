@@ -12,8 +12,8 @@ body {
     font-size: 20px;
     line-height: 150%;
 
-    color: var(--white);
-    background-color: var(--black);
+    color: var(--black);
+    background-color: var(--white);
 }
 
 h1 {
@@ -162,7 +162,7 @@ nav {
     background-position: center;
 }
 
-.social-link:hover {
+.dark-theme .social-link:hover, .social-link:hover {
     background-color: var(--green);
 }
 
@@ -495,40 +495,16 @@ nav {
 }
 
 .dark-theme {
-    --black: #031923;
-    --white: #CCCCCC;
+    --black: #CCCCCC;
+    --white: #031923;
 }
 
 .dark-theme .social-link {
     background-color: #CCCCCC;
 }
 
-.dark-theme .social-link:hover {
-    background-color: var(--green);
-}
-
-.dark-theme .contact-link:hover {
-    color: var(--green);
-}
-
-.dark-theme .contact-link {
-    color: var(--white);
-}
-
-.dark-theme .main-nav a {
-    color: var(--white);
-}
-
-.dark-theme .skill-level {
-    border: 1px solid var(--white);
-}
-
-.dark-theme .main-nav a:hover {
-    color: var(--green);
-}
-
 .dark-theme .main-footer {
-    border: 1px solid #09A494;
+    border-top: 1px solid #09A494;
     color: var(--green);
-    background-color: var(--black);
+    background-color: var(--white);
 }
