@@ -461,6 +461,9 @@ nav {
         margin-top: 8px;
         margin-bottom: 22px;
     }
+    .main-nav_closed {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 380px) {
