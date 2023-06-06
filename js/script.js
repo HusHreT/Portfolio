@@ -121,9 +121,13 @@ const menu = {
     } else {
       this.close();
     }
+  },
+
+  init: function() {
+    this.navButton.addEventListener('click', () => {
+      this.toggleMenu();
+    });
   }
 };
- 
-menu.navButton.addEventListener('click', function() {
-  menu.toggleMenu();
-});
+
+menu.init();
