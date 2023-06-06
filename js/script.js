@@ -104,7 +104,7 @@ const menu = {
     this.navButton.classList.remove('nav-btn_open');
     this.navButton.classList.add('nav-btn_close');
     this.navButton.innerHTML = 
-    '<span class="visually-hidden">Открыть меню</span>'
+    '<span class="visually-hidden">Закрыть меню</span>';
   },
 
   close: function() {
@@ -112,14 +112,18 @@ const menu = {
     this.navButton.classList.remove('nav-btn_close');
     this.navButton.classList.add('nav-btn_open');
     this.navButton.innerHTML = 
-    '<span class="visually-hidden">Закрыть меню</span>'
+    '<span class="visually-hidden">Открыть меню</span>';
+  },
+
+  toggleMenu: function() {
+    if (this.navMenu.classList.contains('main-nav_closed')) {
+      this.open();
+    } else {
+      this.close();
+    }
   }
 };
-
-menu.navButton.addEventListener('click', () => {
-  if (menu.navMenu.classList.contains('main-nav_closed')) {
-    menu.open();
-  } else {
-    menu.close();
-  }
+ 
+menu.navButton.addEventListener('click', function() {
+  menu.toggleMenu();
 });
