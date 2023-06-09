@@ -511,3 +511,7 @@ nav {
     color: var(--green);
     background-color: var(--white);
 }
+
+.nav-btn {
+    border-radius: 0;
+}
