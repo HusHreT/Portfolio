@@ -149,7 +149,10 @@ if (savedTheme) {
 
   document.body.classList.remove('dark-theme');
   document.body.classList.add(savedTheme);
-
+  
+  if (savedTheme === 'white-theme') {
+    checkbox.checked = true;
+  }
 }
 
 checkbox.addEventListener('change', (e) => {
