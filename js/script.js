@@ -37,6 +37,7 @@ const skills = {
   },
 
   sortList: function(prop) {
+    
     const isDescendingOrder = (prop === this.sortProperty) ? !this.isDescendingOrder : false;
     
     this.sortProperty = prop;
@@ -59,10 +60,8 @@ const skills = {
       switch (prop) {
         case 'name':
           return a[prop].localeCompare(b[prop]);
-
         case 'level':
           return a[prop] - b[prop];
-
         default:
           return 0;
       }
@@ -70,6 +69,7 @@ const skills = {
   },
   
   sortProperty: '', 
+
   isDescendingOrder: false,
 
 };
@@ -81,39 +81,33 @@ skills.generateList(skillList);
 const skillsSortBlock = document.querySelector('.sort');
 
 skillsSortBlock.addEventListener('click', (e) => {
+
   const target = e.target;
+
   if (target.nodeName === 'BUTTON') {
 
     e.preventDefault();
-
     const property = target.dataset.type;
-
     skills.sortList(property);
 
   }
 });
 
 const menu = {
-  open: function(navMenu, navButton) {
+  open:function(navMenu, navButton) {
 
     navMenu.classList.remove('main-nav_closed');
-
     navButton.classList.remove('nav-btn_open');
-
     navButton.classList.add('nav-btn_close');
-
     navButton.innerHTML = 
     '<span class="visually-hidden">Закрыть меню</span>';
   },
 
-  close: function(navMenu, navButton) {
+  close:function(navMenu, navButton) {
 
     navMenu.classList.add('main-nav_closed');
-
     navButton.classList.remove('nav-btn_close');
-    
     navButton.classList.add('nav-btn_open');
-
     navButton.innerHTML = 
     '<span class="visually-hidden">Открыть меню</span>';
   },
@@ -122,17 +116,17 @@ const menu = {
 
     if (navMenu.classList.contains('main-nav_closed')) {
       this.open(navMenu, navButton);
-    } else {
+    } 
+    else {
       this.close(navMenu, navButton);
     }
 
   },
 
   init: function(navMenu, navButton) {
-
     this.close(navMenu, navButton);
-
     navButton.addEventListener('click', () => {
+
       this.toggleMenu(navMenu, navButton);
     });
   }
@@ -144,3 +138,29 @@ const navMenu = document.querySelector('.main-nav');
 const navButton = document.querySelector('.nav-btn');
 
 menu.init(navMenu, navButton);
+
+const checkbox = document.querySelector('.switch-checkbox');
+
+const themeKey = 'theme';
+
+const savedTheme = localStorage.getItem(themeKey);
+
+if (savedTheme) {
+
+  document.body.classList.add(savedTheme);
+
+}
+
+checkbox.addEventListener('change', (e) => {
+
+  if (e.target.checked) {
+    document.body.classList.remove('dark-theme');
+    localStorage.setItem(themeKey, 'white-theme');
+  } else {
+    document.body.classList.add('dark-theme');
+    localStorage.setItem(themeKey, 'dark-theme');
+  }
+
+});
+
+console.log(localStorage.getItem('theme'));
