@@ -147,6 +147,7 @@ const savedTheme = localStorage.getItem(themeKey);
 
 if (savedTheme) {
 
+  document.body.classList.remove('dark-theme');
   document.body.classList.add(savedTheme);
 
 }
@@ -157,6 +158,7 @@ checkbox.addEventListener('change', (e) => {
     document.body.classList.remove('dark-theme');
     localStorage.setItem(themeKey, 'white-theme');
   } else {
+    document.body.classList.remove('white-theme');
     document.body.classList.add('dark-theme');
     localStorage.setItem(themeKey, 'dark-theme');
   }
