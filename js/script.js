@@ -162,5 +162,3 @@ checkbox.addEventListener('change', (e) => {
   }
 
 });
-
-console.log(localStorage.getItem('theme'));
