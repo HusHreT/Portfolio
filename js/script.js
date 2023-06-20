@@ -1,12 +1,7 @@
 "use strict";
 
 const skills = {
-  data: [
-    { name: 'html', level: 30, icon: 'html.svg' },
-    { name: 'css', level: 40, icon: 'css.svg' },
-    { name: 'python', level: 10, icon: 'python.svg' },
-    { name: 'cpp', level: 70, icon: 'cpp.svg' },
-  ],
+  data: [],
 
   generateList: function(parentElement) {
 
@@ -32,7 +27,7 @@ const skills = {
       skillLevel.appendChild(skillPercent);
 
       parentElement.append(skillItem, skillLevel);
-      
+
     });
   },
 
@@ -72,9 +67,23 @@ const skills = {
 
   isDescendingOrder: false,
 
+  initList: function(url, parentElement, skillSection) {
+    fetch(url)
+      .then(data => data.json())
+      .then(object => {
+        this.data = object;
+        this.generateList(parentElement);
+      })
+      .catch(() => {
+        console.error('что-то пошло не так');
+        skillSection.remove();
+      });
+  }
 };
 
 const skillList = document.querySelector('dl.skill-list');
+
+skills.initList('db/skills.json', skillList);
 
 skills.generateList(skillList);
 
@@ -125,6 +134,7 @@ const menu = {
 
   init: function(navMenu, navButton) {
     this.close(navMenu, navButton);
+    
     navButton.addEventListener('click', () => {
 
       this.toggleMenu(navMenu, navButton);
