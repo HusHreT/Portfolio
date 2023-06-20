@@ -83,7 +83,9 @@ const skills = {
 
 const skillList = document.querySelector('dl.skill-list');
 
-skills.initList('db/skills.json', skillList);
+const sectionSkill = document.querySelector('section.skills');
+
+skills.initList('db/skills.json', skillList, sectionSkill);
 
 skills.generateList(skillList);
 

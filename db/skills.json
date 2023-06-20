@@ -1,6 +1,6 @@
- [
-    { "name": "html", "level": 30, "icon": "html.svg" },
-    { "name": "css", "level": 40, "icon": "css.svg" },
-    { "name": "python", "level": 10, "icon": "python.svg" },
-    { "name": "cpp", "level": 70, "icon": "cpp.svg" }
+[
+      { "name": "html", "level": 30, "icon": "html.svg" },
+      { "name": "css", "level": 40, "icon": "css.svg" },
+      { "name": "python", "level": 10, "icon": "python.svg" },
+      { "name": "cpp", "level": 70, "icon": "cpp.svg" }
 ]
